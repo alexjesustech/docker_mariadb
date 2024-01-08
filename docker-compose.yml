@@ -7,7 +7,6 @@ services:
     container_name: mariadb
     environment:
       - MARIADB_ROOT_PASSWORD=teste_123
-      - TZ='America/Porto_Velho'
     ports:
       - 3306:3306
     volumes: 
