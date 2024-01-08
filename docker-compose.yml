@@ -1,0 +1,14 @@
+version: '3.8'
+volumes:
+  db:
+services:
+  db:
+    image: mariadb:11.2.2
+    container_name: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=teste_123
+      - TZ='America/Porto_Velho'
+    ports:
+      - 3306:3306
+    volumes: 
+      - db:/var/lib/mysql
